@@ -14,6 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
+/**
+ *  Kafka consumer config, set the properties of the consumers and configures and kafka consumer factory.
+ */
 public class KafkaConsumerConfig {
 
     @Value(value = "${spring.kafka.bootstrap-servers}")

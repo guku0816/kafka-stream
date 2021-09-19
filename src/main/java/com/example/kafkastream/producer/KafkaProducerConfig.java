@@ -13,8 +13,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
+/**
+ *  Configurations for the kafka producers to be used.
+ */
 public class KafkaProducerConfig {
-
 
     @Value("${spring.kafka.bootstrap-servers}")
     private String bootStrapServer;

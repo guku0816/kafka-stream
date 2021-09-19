@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Slf4j
+/**
+ * Controller exposes an API that is used to produce messages the quotes topic.
+ */
 public class PushToKafkaController {
 
     @Value("${kafka.producer.topic.name}")
@@ -30,6 +33,10 @@ public class PushToKafkaController {
         return new ResponseEntity<>("Sent !!!!", HttpStatus.OK);
     }
 
+    /**
+     * Pushses messages to the Kafka topic
+     * @param message message to be pushed to the topic
+     */
     public void sendMessage(String message) {
 
         ListenableFuture<SendResult<String, String>> future =
