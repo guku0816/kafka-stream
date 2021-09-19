@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 /**
- *  Consumes the messages pushed by the Kafka Stream processor. I will later have any logic that need to be executed if
+ *  Consumes the messages pushed by the Kafka Stream processor. It will later have any logic that need to be executed if
  *  a threshold value of the count is exhausted.
  */
 public class CountsConsumer {
